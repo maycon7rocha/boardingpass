@@ -6,6 +6,8 @@ import {
   Poppins_800ExtraBold,
 } from "@expo-google-fonts/poppins";
 
+import { StatusBar } from "expo-status-bar";
+
 import { Home } from './src/app/home';
 
 export default function App() {
@@ -21,7 +23,10 @@ export default function App() {
   }
   
   return (
-    <Home />
+    <>
+      <StatusBar style="light" backgroundColor="transparent"/>
+      <Home />
+    </>
   );
 }
 
